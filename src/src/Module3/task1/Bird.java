@@ -1,15 +1,10 @@
 package Module3.task1;
 
-public class Bird {
+public class Bird extends Solution {
 
     public static void main(String[] args) {
-        messagePrint("I am flying");
-        messagePrint("I am walking");
-        messagePrint("I am singing");
-        messagePrint("I am Bird");
-    }
-
-    private static void messagePrint(String message) {
-        System.out.println(message);
-    }
+        Solution.messagePrint("I am flying");
+        Solution.messagePrint("I am singing");
+        Solution.messagePrint("I am Bird");
+            }
 }

@@ -2,7 +2,7 @@ package Module3.task1;
 
 public class Animal {
 
-    void walk() {
-        System.out.println("I am walking");
+    public static void main(String[] args) {
+        Solution.messagePrint("I am walking");
     }
 }
