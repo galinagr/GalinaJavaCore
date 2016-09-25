@@ -1,5 +1,13 @@
 package Module3.task2;
 
-public class Adder {
+class Adder extends Arithmetic {
+    static boolean check(Integer a, Integer b) {
+        boolean c = false;
+        if (a.intValue() >= b.intValue()) {
+           c = true;
+        }
+        System.out.println(c);
+        return c;
 
+    }
 }
