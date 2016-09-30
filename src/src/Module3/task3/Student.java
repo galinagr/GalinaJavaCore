@@ -1,7 +1,6 @@
 package Module3.task3;
 
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -10,7 +9,11 @@ public class Student {
     private String lastName;
     private int group;
     private int age;
-    private Course[] coursesTaken = new Course[2];
+    private SimpleDateFormat dateFormat = new SimpleDateFormat("MM-DD-YYYY");
+    private Date date = dateFormat.parse("01-01-2016");
+    private Course firstCourse = new Course(date, "Math");
+    private Course secondCourse = new Course(date,"Phi");
+    public Course[] coursesTaken = {firstCourse, secondCourse};
 
 
     public Student(String firstName, String lastName, int age, int group, Course[] coursesTaken) {
