@@ -1,7 +1,5 @@
 package Module3.task2;
 
-import java.lang.reflect.Array;
-
 class Main extends Adder {
     public static void main(String[] args) {
         Integer array[] = new Integer[2];

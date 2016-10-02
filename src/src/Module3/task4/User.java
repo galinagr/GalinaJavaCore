@@ -66,26 +66,26 @@ public class User {
     }
 
     public void paidSalary() {
-        balance += balance + salary;
+        balance += salary;
     }
 
     public double withdraw(int summ) {
-        double result = 0;
-        if (summ < 1000) {
-            result = getBalance() - summ - summ * 0.05;
-        } else if (summ < 1000) {
+        double result;
+        if (summ >= 1000) {
             result = getBalance() - summ - summ * 0.1;
+        } else {
+            result = getBalance() - summ - summ * 0.05;
         }
+        if (result < 0) System.out.println("Enter new sum, result is negative!");
         return result;
     }
 
     public int companyNameLenght() {
-        String s = getCompanyName();
         int charCount = 0;
         char temp;
 
-        for (int i = 0; i < s.length(); i++) {
-            temp = s.charAt(i);
+        for (int i = 0; i < companyName.length(); i++) {
+            temp = companyName.charAt(i);
 
             if (temp != ' ')
                 charCount++;
@@ -95,7 +95,7 @@ public class User {
 
     public int monthIncreaser(int addMonth) {
         int c = getMonthsOfEmployment();
-        c+= addMonth;
+        c += addMonth;
         return c;
     }
 }

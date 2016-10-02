@@ -1,17 +1,17 @@
 package Module3.task3;
 
 
-public class CollegeStudent extends Student {
+class CollegeStudent extends Student {
     private String collegeName;
     private int rating;
     private long id;
 
 
-    public CollegeStudent(String firstName, String lastName, int age, int group, Course[] coursesTaken) {
+    CollegeStudent(String firstName, String lastName, int age, int group, Course[] coursesTaken) {
         super(firstName, lastName, age, group, coursesTaken);
     }
 
-    public CollegeStudent(String lastName, String firstName, int group) {
+    CollegeStudent(String lastName, String firstName, int group) {
         super(lastName, firstName, group);
     }
 
@@ -40,7 +40,7 @@ public class CollegeStudent extends Student {
         return id;
     }
 
-    public CollegeStudent(String lastName, String firstName, int age, int group, Course[] coursesTaken, String collegeName, long id, int rating) {
+    CollegeStudent(String lastName, String firstName, int age, int group, Course[] coursesTaken, String collegeName, long id, int rating) {
         super(lastName, firstName, age, group, coursesTaken);
         this.collegeName = collegeName;
         this.id = id;

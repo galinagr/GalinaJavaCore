@@ -1,7 +1,6 @@
 package Module3.task3;
 
 import java.util.Date;
-import java.text.SimpleDateFormat;
 
 
 class Course {
@@ -29,7 +28,9 @@ class Course {
         this.startDate = startDate;
     }
 
-    public void setName(String name) {   this.name = name;  }
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public void setHoursDuration(int hoursDuration) {
         this.hoursDuration = hoursDuration;
@@ -43,11 +44,11 @@ class Course {
         return startDate;
     }
 
-    public String getTeacherName() { return teacherName; }
+    public String getTeacherName() {
+        return teacherName;
+    }
 
     public int getHoursDuration() {
         return hoursDuration;
     }
-    //ты создаешь несколько курсов, потом создаешь массив этих курсов и помещаешь их в него. например вот так
-
 }
